@@ -1,0 +1,39 @@
+{
+  "type": "Program",
+  "start": 0,
+  "end": 21,
+  "range": [0, 21],
+  "body": [
+    {
+      "type": "VariableDeclaration",
+      "start": 0,
+      "end": 21,
+      "range": [0, 21],
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "start": 6,
+          "end": 20,
+          "range": [6, 20],
+          "id": {
+            "type": "Identifier",
+            "start": 6,
+            "end": 9,
+            "range": [6, 9],
+            "name": "foo"
+          },
+          "init": {
+            "type": "Literal",
+            "start": 12,
+            "end": 20,
+            "range": [12, 20],
+            "value": "baz123",
+            "raw": "\"baz123\""
+          }
+        }
+      ],
+      "kind": "const"
+    }
+  ],
+  "sourceType": "module"
+}

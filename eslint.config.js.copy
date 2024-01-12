@@ -1,0 +1,25 @@
+"use strict";
+
+// カスタムルールを読み込む
+const eslintPluginExample = require("./eslint-plugin-example");
+
+module.exports = [
+  {
+    files: ["**/*.js"],
+    languageOptions: {
+      sourceType: "commonjs",
+      ecmaVersion: "latest",
+    },
+    // 読み込んだカスタムルールをpluginとして認識させる
+    // プラグイン名: プラグイン(カスタムルール)
+    plugins: { example: eslintPluginExample },
+    rules: {
+      // ルール名を定義する。プラグイン名/ルール名にした方が一貫性がある
+      // errorはルールに引っ掛かった時ターミナルに表示するエラーレベル
+      // off or 0 はリントを無効にする
+      // warn or 1 は警告
+      // error or 2 はエラー
+      "example/enforce-foo-bar": "warn",
+    },
+  },
+];
