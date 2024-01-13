@@ -1,7 +1,7 @@
 {
   "devDependencies": {
     "eslint": "^8.56.0",
-    "eslint-plugin-enforce-foo-bar": "file:custom-rules/eslint-plugin-enforce-foo-bar"
+    "eslint-plugin-local-rules": "^2.0.1"
   },
   "name": "eslint-study",
   "version": "1.0.0",

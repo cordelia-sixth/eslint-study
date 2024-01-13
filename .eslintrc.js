@@ -19,8 +19,9 @@ module.exports = {
   parserOptions: {
     ecmaVersion: "latest",
   },
-  plugins: ["enforce-foo-bar"],
+  plugins: ["local-rules"],
   rules: {
-    "enforce-foo-bar/enforce-foo-bar": "warn",
+    "local-rules/enforce-foo-bar": "warn",
+    "local-rules/enforce-foo-bar2": "warn",
   },
 };
