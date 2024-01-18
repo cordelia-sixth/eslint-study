@@ -1,6 +1,7 @@
 {
   "devDependencies": {
     "eslint": "^8.56.0",
+    "eslint-plugin-custom-rules": "file:src/lib/eslint-plugin-custom-rules",
     "eslint-plugin-enforce-foo-bar": "file:custom-rules/eslint-plugin-enforce-foo-bar"
   },
   "name": "eslint-study",
@@ -95,7 +96,8 @@
     "yocto-queue": "^0.1.0"
   },
   "scripts": {
-    "test": "node enforce-foo-bar.test.js"
+    "test": "node enforce-foo-bar.test.js",
+    "lint": "eslint src/lib/app.js"
   },
   "author": "",
   "license": "ISC",

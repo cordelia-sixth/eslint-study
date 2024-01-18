@@ -7,3 +7,5 @@ function correctFooBar() {
 function incorrectFoo() {
   const foo = "baz"; // Problem!
 }
+
+const str = "bad";

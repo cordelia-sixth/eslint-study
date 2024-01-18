@@ -19,8 +19,8 @@ module.exports = {
   parserOptions: {
     ecmaVersion: "latest",
   },
-  plugins: ["enforce-foo-bar"],
+  plugins: ["custom-rules"],
   rules: {
-    "enforce-foo-bar/enforce-foo-bar": "warn",
+    "custom-rules/enforce-foo-bar": "warn",
   },
 };
